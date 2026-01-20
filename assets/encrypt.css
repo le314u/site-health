@@ -1,0 +1,134 @@
+:root {
+  --bg: #f4f7f8;
+  --card-bg: #ffffff;
+  --primary: #0f766e;
+  --danger: #dc2626;
+  --text: #0f172a;
+  --muted: #64748b;
+  --radius: 18px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: radial-gradient(circle at top, #afafaf, var(--bg));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  max-width: 420px;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    #020617,
+    #020617dd
+  );
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow:
+    0 0 0 1px rgba(34,197,94,0.05),
+    0 20px 40px rgba(0,0,0,0.6);
+}
+
+.card-header {
+  text-align: center;
+  padding: 28px 20px 20px;
+}
+
+.icon {
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+.card-header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.card-header p {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #1e293b,
+    transparent
+  );
+  margin: 10px 0;
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+textarea,
+input {
+  background: #020617;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--text);
+  resize: none;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background: linear-gradient(180deg, #22c55e, #16a34a);
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #020617;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 0.7rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
