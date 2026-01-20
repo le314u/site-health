@@ -123,6 +123,7 @@ Este projeto é open-source e pode ser usado, modificado e adaptado para fins **
 
 Uso comercial deve respeitar as leis locais de proteção de dados e privacidade.
 
+
 ---
 
 ## ❤️ Filosofia do projeto
